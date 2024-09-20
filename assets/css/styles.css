@@ -16,3 +16,32 @@
 button{
     color: black !important;
 }
+
+
+/* card  */
+.card {
+    transition: ease-in-out .3s;
+}
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+
+
+/* hero header  */
+.hero-section-header {
+    background: linear-gradient(135deg, #ff6a00, #ff2d00);
+    padding: 80px 0;
+    color: white;
+}
+.hero-section-header h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+}
+
+.hero-section-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}

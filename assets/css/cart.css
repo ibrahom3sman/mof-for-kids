@@ -1,0 +1,31 @@
+/* Cart style  */
+.card {
+    transition: ease-in-out .3s;
+}
+.card:hover {
+    transform: translateY(-6px);
+}
+.card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
+}
+.card h5 {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    color: var(--bs-card-title-color);
+    font-weight: bold;
+    font-family: sans-serif;
+    
+}
+.card-text {
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+.card .price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.quantity button {
+    width: 30px;
+}

@@ -1,0 +1,86 @@
+/* Brithdays style  */
+
+.offers-scn {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+.offers-scn h2 {
+    color: #ff6a00;
+    font-size: 2.5rem ;
+    margin-bottom: 20px;
+}
+
+.offers-scn .offers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.offers-scn .offers-container .offer-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: ease-in-out .3s;
+    border-radius: 15px;
+}
+.offers-scn .offers-container .offer-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 4 15px rgba(0, 0, 0, 0.15);
+}
+.offer-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+.offer-card p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.offer-card p span {
+    color: #ff6a00;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+/* Testimonial Style  */
+.testimonial-scn {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+.testimonial-scn h2 {
+    text-align: center;
+    color: #ff6a00;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.testimonial-scn .testimonial-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.testimonial-scn .testimonial-container .testimonial-card{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-scn .testimonial-container .testimonial-card  {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.testimonial-scn .testimonial-container .testimonial-card h4{
+    color: #ff6a00;
+    margin-top: 10px;
+    font-size: 1rem;
+}

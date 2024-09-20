@@ -1,0 +1,262 @@
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <script>
+        fetch("../partials/header.html")
+        .then(res => res.text())
+        .then((data) => {
+            document.getElementById('navbar-container').innerHTML = data;
+        })
+        .catch((err) => console.log(err))
+    </script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- content -->
+    <div class="container">
+        <div class="container-fluid">
+            <div class="postion-relative">
+                <img src="../assets/img/hero.webp" class="img-fluid" alt="">
+                <div class="small-box">
+                    <h2>اكتشف المرح</h2>
+                    <p>انضم إلينا الآن واستمتع بأفضل الألعاب والفعاليات للأطفال!
+                    </p>
+                    <a href="">سجل الان</a>
+                </div>
+            </div>
+        </div>
+        <div class="my-5 container">
+            <ul class="nav nav-tabs nav-justified" id="gamesTab" role="tablist">
+                <li class="nav-item"  role="presentation">
+                    <button class="tab-btn nav-link active" id="rides-tab" data-bs-toggle="tab" data-bs-target="#rides" type="button" role="tab" aria-controls="rides" aria-selected="true">ألعاب الركوب</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="tab-btn nav-link" id="arcade-tab" data-bs-toggle="tab" data-bs-target="#arcade" type="button" role="tab" aria-controls="arcade" aria-selected="false">ألعاب المائية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="tab-btn nav-link" id="softplay-tab" data-bs-toggle="tab" data-bs-target="#softplay" type="button" role="tab" aria-controls="softplay" aria-selected="false">منطقة اللعب المرنة</button>
+                </li>
+            </ul>
+            <!-- tap content -->
+            <div class="tab-content mt-4">
+                <div class="tab-pane fade active show" id="rides" role="tabpanel" aria-labelledby="rides-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="gal-item positsion-relative rounded overflow-hidden shdow-sm">
+                                <img src="../assets/img/electronic1.webp" class="img-fluid" alt="">
+                                <div class="overlay  text-center w-100 text-white bg-black p-3">
+                                    <h5>العاب الركوب المثيرة</h5>
+                                    <a href="#" class="btn btn-light mt-4">اقرأ المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- scd tab -->
+                <div class="tab-pane fade" id="arcade" role="tabpanel" aria-labelledby="arcade-tab">
+                    <div class="row g-4">
+                    <div class="col-md-4">
+                            <div class="gal-item position-relative overflow-hidden rounded shadow-sm">
+                                <img src="../assets/img/soft.webp" class="img-fluid" alt="Ride Game 1">
+                                <div class="overlay start-0 w-100 p-3 bg-dark text-white text-center">
+                                    <h5>  الألعاب المائية</h5>
+                                    <a href="#" class="btn btn-light mt-2">اقرأ المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Arcade items similar to rides -->
+                    </div>
+                </div>
+                <!-- thd tab -->
+                <div class="tab-pane fade" id="softplay" role="tabpanel" aria-labelledby="softplay-tab">
+                    <div class="row g-4">
+                    <div class="col-md-4">
+                            <div class="gal-item position-relative overflow-hidden rounded shadow-sm">
+                                <img src="../assets/img/soft2.webp" class="img-fluid" alt="Ride Game 1">
+                                <div class="overlay start-0 w-100 p-3 bg-dark text-white text-center">
+                                    <h5>  منطقة اللعب المرنة</h5>
+                                    <a href="#" class="btn btn-light mt-2">اقرأ المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Softplay items similar to rides -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <h2 class="text-center mb-4">
+                بطاقات العاب المفرجي
+            </h2>
+            <p class="text-center mb-4">
+                تنقل بين البطاقات المختلفة لترى كل العروض الرائعة للمرح
+            </p>
+            <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card shadow-sm">
+                                    <img src="../assets/img/electronic1.webp" class="card-img-top" alt="Game Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">لعبة 30</h5>
+                                        <p class="card-text">استمتع بباقة القيمة الرائعة! احصل على 30 ألعاب مقابل 21 ريال...</p>
+                                        <h5 class="text-danger">OMR 21</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <a href="#" class="text-primary">معرفة المزيد</a>
+                                            <a href="#" class="btn btn-danger">إضافة الى السلة</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card shadow-sm">
+                                    <img src="../assets/img/electronic1.webp" class="card-img-top" alt="Game Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">لعبة 31</h5>
+                                        <p class="card-text">احصل على لعبة رائعة مع ميزات جديدة مقابل 15 ريال...</p>
+                                        <h5 class="text-danger">OMR 15</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <a href="#" class="text-primary">معرفة المزيد</a>
+                                            <a href="#" class="btn btn-danger">إضافة الى السلة</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card shadow-sm">
+                                    <img src="../assets/img/electronic1.webp" class="card-img-top" alt="Game Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">لعبة 32</h5>
+                                        <p class="card-text">تجربة لعب رائعة مقابل 19 ريال فقط...</p>
+                                        <h5 class="text-danger">OMR 19</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <a href="#" class="text-primary">معرفة المزيد</a>
+                                            <a href="#" class="btn btn-danger">إضافة الى السلة</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card shadow-sm">
+                                    <img src="../assets/img/electronic1.webp" class="card-img-top" alt="Game Image">
+                                    <div class="card-body">
+                                        <h5 class="card-title">لعبة 33</h5>
+                                        <p class="card-text">احصل على تجربة اللعب المثالية مقابل 25 ريال...</p>
+                                        <h5 class="text-danger">OMR 25</h5>
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <a href="#" class="text-primary">معرفة المزيد</a>
+                                            <a href="#" class="btn btn-danger">إضافة الى السلة</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Carousel controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#gameCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gameCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- About Company Section -->
+        <div class="py-5" id="aboutCompany">
+            <div class="row align-items-center">
+                <!-- The Company Video  -->
+                <div class="col-lg-6">
+                    <h2 class="mb-4">عن الشركة</h2>
+                    <p class="mb-4">نحن في مجموعة المفرجي نقدم أفضل الألعاب للأطفال مع تجارب ترفيهية ممتعة وآمنة. تابع معنا للحصول على المزيد من المعلومات.</p>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">رؤيتنا ورسالتنا</h3>
+                    <p class="mb-4">نقدم الأفضل في عالم الترفيه للأطفال، مع بيئة آمنة وممتعة لتجارب ترفيهية عائلية لا تُنسى. رسالتنا هي تحقيق السعادة.</p>
+                    <h3 class="mb-3">قيمنا</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <i class="bi bi-shield-lock-fill me-2"></i>
+                            الأمان
+                        </li>
+                        <li>
+                            <i class="bi bi-shield-lock-fill me-2"></i>
+                            المرح
+                        </li>
+                        <li>
+                            <i class="bi bi-shield-lock-fill me-2"></i>
+                            الإبداع
+                        </li>
+                        <li>
+                            <i class="bi bi-shield-lock-fill me-2"></i>
+                            التعلم والتطوير
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Abou The founder Section  -->
+        <div id="about-founder" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center mb-4">
+                        <img src="../assets/img/founder.jpg" alt="" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="mb-4">عن المؤسس</h2>
+                        <p class="mb-3">المؤسس <b>عبدالله المفرجي</b>  هو رائد أعمال شغوف بتقديم أفضل التجارب الترفيهية للأطفال. أسس مجموعة المفرجي لتحقيق رؤيته في عالم الترفيه والتطوير.</p>
+                        <p class="mb-4">بفضل رؤيته القيادية، استطاعت مجموعة المفرجي أن تصبح واحدة من الوجهات الترفيهية المفضلة للعائلات. إن التزامه بالجودة والابتكار واضح في كل ما نقدمه.</p>
+                        <h3>إنجازات المؤسس:</h3>
+                        <ul>
+                            <li>
+                                <i class="bi bi-shield-lock-fill me-2"></i>
+                                رؤية قيادية في صناعة الترفيه
+                            </li>
+                            <li>
+                                <i class="bi bi-shield-lock-fill me-2"></i>
+                                تطوير الابتكار والجودة
+                            </li>
+                            <li>
+                                <i class="bi bi-shield-lock-fill me-2"></i>
+                                بناء علاقات قوية مع العملاء
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer  -->
+    <footer class="bg-dark text-white py-5" id="footer"></footer>
+    <script>
+        fetch("../partials/footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+    </script>
+</body>
+</html>

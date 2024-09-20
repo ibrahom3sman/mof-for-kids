@@ -1,0 +1,16 @@
+/* Header Styles */ 
+#navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navcation {
+    background-color: white !important;
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4)
+}
+.navbar-brand { 
+    color:#ff0000;
+}
+.logo {
+    width: 100px;
+}

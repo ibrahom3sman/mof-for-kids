@@ -1,0 +1,7 @@
+/* Footer Styles */ 
+footer p {
+    margin-bottom: 1rem;
+}
+footer ul li a {
+    text-decoration: dashed;
+}
